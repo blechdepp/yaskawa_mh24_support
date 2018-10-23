@@ -116,21 +116,21 @@
 			<child link="vendor_base_link" />
 			<origin xyz="0 0 0.505" />
 		</joint>
-		<joint name="joint_s" type="revolute">
+		<joint name="joint_1_s" type="revolute">
 			<parent link="base_link"/>
 			<child link="link_s"/>
 			<origin xyz="0 0 0" />
 			<axis xyz="0 0 1" />
 			<limit lower="${-180 / 180.0 * pi}" upper="${180 / 180.0 * pi}" effort="100" velocity="3.44" />
 		</joint>
-		<joint name="joint_l" type="revolute">
+		<joint name="joint_2_l" type="revolute">
 			<parent link="link_s"/>
 			<child link="link_l"/>
 			<origin xyz="0.150 0 0.505" />
 			<axis xyz="0 1 0" />
 			<limit lower="${-105 / 180.0 * pi}" upper="${155 / 180.0 * pi}" effort="100" velocity="3.32" />
 		</joint>
-		<joint name="joint_u" type="revolute">
+		<joint name="joint_3_u" type="revolute">
 			<parent link="link_l"/>
 			<child link="link_u"/>
 			<origin xyz="0 0 0.760" />
@@ -138,21 +138,21 @@
 			<!-- Limited wrt to datasheet to prevent self-collisions -->
 			<limit lower="${-86 / 180.0 * pi}" upper="${163 / 180.0 * pi}" effort="100" velocity="3.67" />
 		</joint>
-		<joint name="joint_r" type="revolute">
+		<joint name="joint_4_r" type="revolute">
 			<parent link="link_u"/>
 			<child link="link_r"/>
 			<origin xyz="0 0 0.200" />
 			<axis xyz="-1 0 0" />
 			<limit lower="${-200 / 180.0 * pi}" upper="${200 / 180.0 * pi}" effort="100" velocity="7.16" />
 		</joint>
-		<joint name="joint_b" type="revolute">
+		<joint name="joint_5_b" type="revolute">
 			<parent link="link_r"/>
 			<child link="link_b"/>
 			<origin xyz="0.795 0 0" />
 			<axis xyz="0 -1 0" />
 			<limit lower="${-150 / 180.0 * pi}" upper="${150 / 180.0 * pi}" effort="100" velocity="7.16" />
 		</joint>
-		<joint name="joint_t" type="revolute">
+		<joint name="joint_6_t" type="revolute">
 			<parent link="link_b"/>
 			<child link="link_t"/>
 			<origin xyz="0.100 0 0" />
