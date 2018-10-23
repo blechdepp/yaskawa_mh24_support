@@ -26,8 +26,8 @@
 				<geometry>
 					<mesh filename="package://yaskawa_mh24_support/meshes/mh24/visual/s_axis.stl"/>
 				</geometry>
-				<material name="silver">
-					<color rgba="0.8 0.8 0.8 1"/>
+				<material name="blue">
+					<color rgba="0 0 1 1"/>
 				</material>
 			</visual>
 			<collision>
@@ -56,7 +56,7 @@
 				<geometry>
 					<mesh filename="package://yaskawa_mh24_support/meshes/mh24/visual/u_axis.stl"/>
 				</geometry>
-				<material name="silver"/>
+				<material name="blue"/>
 			</visual>
 			<collision>
 				<geometry>
@@ -84,7 +84,7 @@
 				<geometry>
 					<mesh filename="package://yaskawa_mh24_support/meshes/mh24/visual/b_axis.stl"/>
 				</geometry>
-				<material name="silver"/>
+				<material name="blue"/>
 			</visual>
 			<collision>
 				<geometry>
