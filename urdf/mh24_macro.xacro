@@ -108,7 +108,6 @@
 				<material name="yellow"/>
 			</collision>
 		</link>
-		<link name="vendor_ee" />
 		<!-- end of link list -->
 		<!-- joint list -->
 		<joint name="vendor_base_joint" type="fixed">
@@ -158,11 +157,6 @@
 			<origin xyz="0.100 0 0" />
 			<axis xyz="-1 0 0" />
 			<limit lower="${-455 / 180.0 * pi}" upper="${455 / 180.0 * pi}" effort="100" velocity="10.82" />
-		</joint>
-		<joint name="vendor_ee_joint" type="fixed">
-			<parent link="link_t" />
-			<child link="vendor_ee" />
-			<origin rpy="0 ${-0.5 * pi} ${pi}" />
 		</joint>
 		<!-- end of joint list -->
 	</xacro:macro>

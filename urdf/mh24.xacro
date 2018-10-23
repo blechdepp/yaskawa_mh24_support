@@ -4,5 +4,3 @@
 	<xacro:include filename="$(find yaskawa_mh24_support)/urdf/mh24_macro.xacro" />
 	<xacro:yaskawa_mh24 prefix=""/>
 </robot>
-
-
